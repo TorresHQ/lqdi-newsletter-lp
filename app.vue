@@ -1,6 +1,11 @@
+<script setup>
+import TopBar from '~/components/layout/TopBar.vue'
+import Footer from '~/components/layout/Footer.vue'
+</script>
+
 <template>
-  <div>
-    <NuxtWelcome />
+  <TopBar v-if="$route.path === '/'" />
+  <NuxtPage />
   </div>
 </template>
 
