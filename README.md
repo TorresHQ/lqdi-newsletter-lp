@@ -3,8 +3,6 @@
 ### Horário  de conclusão do projeto: 18:40
 
 <br/>
-<br/>
-
 
 # Considerações
 ### Objetivos e Recursos: https://github.com/TorresHQ/lqdi-newsletter-lp/pull/1
@@ -16,7 +14,6 @@
 - /login - `https://lqdi-newsletter-lp.up.railway.app/login` (🔓)
 - /admin - `https://lqdi-newsletter-lp.up.railway.app/admin` (🔒)
 
-<br/>
 <br/>
 
 # Nuxt 3 Minimal Starter
