@@ -6,7 +6,7 @@ import Footer from '~/components/layout/Footer.vue'
 <template>
   <TopBar v-if="$route.path === '/'" />
   <NuxtPage />
-  </div>
+  <Footer v-if="$route.path === '/'" />
 </template>
 
 <style>
