@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  lqdi-newsletter-lp:
+    build: .
+    container_name: lqdi-newsletter-lp
+    restart: unless-stopped
+    ports:
+      - 3000:3000
