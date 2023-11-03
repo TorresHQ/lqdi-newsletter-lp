@@ -1,4 +1,4 @@
-# LQDI Newsletter API 
+# LQDI Newsletter Landing Page 
 ### Horário de início do projeto: 16:50
 ### Horário  de conclusão do projeto: 18:40
 
