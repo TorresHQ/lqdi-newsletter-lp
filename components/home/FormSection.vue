@@ -47,7 +47,7 @@ const sendSubscription = async () => {
         toast.value.toastHandler(true, 'Inscrição efetuada com sucesso!', 'success');
     })
     .catch(error => {
-        toast.value.toastHandler(true, `Erro ao enviar mensagem: ${error.data.message}`, 'error');
+        toast.value.toastHandler(true, `Erro ao enviar mensagem: ${error?.data?.message}`, 'error');
     })
     .finally(() => {
         loadingButton.value = false;

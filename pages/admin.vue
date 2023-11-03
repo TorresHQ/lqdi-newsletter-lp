@@ -53,7 +53,7 @@ const sendEmail = async (item) => {
     toast.value.toastHandler(true, 'E-mail enviado com sucesso!', 'success');
   })
   .catch(error => {
-    toast.value.toastHandler(true, `Erro ao enviar e-mail: ${error.data.message}`, 'error');
+    toast.value.toastHandler(true, `Erro ao enviar e-mail: ${error?.data?.message}`, 'error');
   })
   .finally(() => {
     loadingSendEmail.value = null;

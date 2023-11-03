@@ -38,7 +38,7 @@ const login = async () => {
     router.push('/admin');
   })
   .catch(error => {
-    toast.value.toastHandler(true, `Erro ao enviar mensagem: ${error.data.message}`, 'error');
+    toast.value.toastHandler(true, `Erro ao enviar mensagem: ${error?.data?.message}`, 'error');
   })
   .finally(() => {
     loadingButton.value = false;
