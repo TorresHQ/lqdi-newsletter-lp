@@ -1,5 +1,6 @@
 <script setup>
 import Toast from '~/components/toast/Toast.vue';
+import useTabOnInputEnter from '~/composables/useTabOnInputEnter.js';
 
 const toast = ref(null);
 const config = useRuntimeConfig();
@@ -53,6 +54,8 @@ const sendSubscription = async () => {
         loadingButton.value = false;
     });
 };  
+
+useTabOnInputEnter();
 </script>
 
 <template>
@@ -223,4 +226,4 @@ const sendSubscription = async () => {
         right: 10px;
     }
 }
-</style>
+</style>~/composables/useTabOnInputEnter.js
