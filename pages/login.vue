@@ -1,5 +1,6 @@
 <script setup>
 import Toast from '~/components/toast/Toast.vue';
+import focusNextInput from '~/utils/focus-next-input';
 
 const toast = ref(null);
 const router = useRouter();
@@ -63,9 +64,10 @@ const formSubmit = () => {
 
   <div>
     <v-img
-      class="mx-auto my-6"
+      class="mx-auto my-6 clickable"
       max-width="114"
       src="/img/logo-lqdi-login.png"
+      @click="router.push('/')"
     ></v-img>
 
     <v-card
@@ -82,6 +84,7 @@ const formSubmit = () => {
         placeholder="Email address"
         prepend-inner-icon="mdi-email-outline"
         variant="outlined"
+        @keydown.enter="el => focusNextInput(el.target)"
       ></v-text-field>
 
       <div class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between">
@@ -97,6 +100,7 @@ const formSubmit = () => {
         prepend-inner-icon="mdi-lock-outline"
         variant="outlined"
         @click:append-inner="visible = !visible"
+        @keydown.enter="formSubmit"
       ></v-text-field>
 
       <v-btn
@@ -113,3 +117,9 @@ const formSubmit = () => {
     </v-card>
   </div>
 </template>
+
+<style scoped>
+.clickable {
+  cursor: pointer;
+}
+</style>
